@@ -117,6 +117,12 @@
       "title": "ShiroRikkaのAIAPI"
     },
     {
+      "url": "https://srs.koyeb.app",
+      "desc": "OpenList",
+      "icon": "https://doc.oplist.org.cn/logo.svg",
+      "title": "ShiroRikkaのOpenList"
+    },
+    {
       "url": "https://tv.shirorikka.dpdns.org",
       "desc": "影视站点",
       "icon": "https://avatars.githubusercontent.com/u/226115334?s=48&v=4",
