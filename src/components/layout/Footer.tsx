@@ -35,6 +35,21 @@ export function Footer({
     );
   };
 
+  const renderMoeICP = (text: string) => {
+    const regex = /备(\d+?)号/;
+    const match = text.replace(/\s+/g, "").match(regex);
+    return (
+      <Link
+        target="_blank"
+        href={`https://icp.gov.moe/?keyword=${match?.[1]}`}
+        className="flex flex-nowrap items-center gap-1"
+      >
+        <Image src={"https://icp.gov.moe/images/ico64.png"} width={14} height={14} alt="MoeICP" />
+        <span>{text}</span>
+      </Link>
+    );
+  };
+
   return (
     <motion.footer
       {...motions}
@@ -72,6 +87,7 @@ export function Footer({
             </Link>
           )}
           {footer?.MPSICP && renderMPS(footer.MPSICP)}
+          {footer?.MoeICP && renderMoeICP(footer.MoeICP)}
         </div>
       )}
     </motion.footer>
